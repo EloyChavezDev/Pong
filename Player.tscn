@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 80 )
+
+[sub_resource type="ImageTexture" id=4]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 50, 460 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 10, 80 )
+shape = SubResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 20.0
+margin_bottom = 160.0
+texture = SubResource( 4 )
